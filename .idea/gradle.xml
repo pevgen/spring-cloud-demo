@@ -12,6 +12,21 @@
                   <project path="$PROJECT_DIR$/eureka-server" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/gateway" name="gateway">
+                <projects>
+                  <project path="$PROJECT_DIR$/gateway" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/serviceA" name="serviceA">
+                <projects>
+                  <project path="$PROJECT_DIR$/serviceA" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/serviceB" name="serviceB">
+                <projects>
+                  <project path="$PROJECT_DIR$/serviceB" />
+                </projects>
+              </build>
             </builds>
           </compositeBuild>
         </compositeConfiguration>
@@ -21,6 +36,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/eureka-server" />
+            <option value="$PROJECT_DIR$/gateway" />
+            <option value="$PROJECT_DIR$/serviceA" />
+            <option value="$PROJECT_DIR$/serviceB" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -29,6 +47,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/eureka-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gateway" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/gateway" />
           </set>
         </option>
       </GradleProjectSettings>
