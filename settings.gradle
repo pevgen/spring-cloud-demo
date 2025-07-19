@@ -1,3 +1,5 @@
 rootProject.name = 'spring-cloud-demo'
 
 includeBuild "eureka-server"
+includeBuild "serviceA"
+includeBuild "serviceB"
