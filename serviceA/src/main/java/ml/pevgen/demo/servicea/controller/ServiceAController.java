@@ -10,9 +10,12 @@ public class ServiceAController {
     @Value("${eureka.instance.instance-id}")
     private String instanceId;
 
+    @Value("${tmp.value}")
+    private int tmpValue;
+
     @GetMapping("/serviceA")
     public String serviceA() {
-        return "Service A. ID: " + instanceId;
+        return "Service A. ID: " + instanceId + "; tmpValue: " + tmpValue;
     }
 
 }

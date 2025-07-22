@@ -7,6 +7,11 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT">
             <builds>
+              <build path="$PROJECT_DIR$/config-server" name="config-server">
+                <projects>
+                  <project path="$PROJECT_DIR$/config-server" />
+                </projects>
+              </build>
               <build path="$PROJECT_DIR$/eureka-server" name="eureka-server">
                 <projects>
                   <project path="$PROJECT_DIR$/eureka-server" />
@@ -35,6 +40,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/config-server" />
             <option value="$PROJECT_DIR$/eureka-server" />
             <option value="$PROJECT_DIR$/gateway" />
             <option value="$PROJECT_DIR$/serviceA" />
