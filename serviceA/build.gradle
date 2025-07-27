@@ -25,6 +25,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'  // for using spring config server
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'               // базовый актуатор для метрик и трейсов
+    implementation 'io.micrometer:micrometer-tracing-bridge-otel'                        // мост Micrometer Tracing к OpenTelemetry API
+//    implementation 'io.opentelemetry:opentelemetry-exporter-zipkin'                      // экспортер в Zipkin (альтернативно можно использовать OTLP или другие)
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

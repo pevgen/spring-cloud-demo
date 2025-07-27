@@ -13,9 +13,20 @@ public class ServiceAController {
     @Value("${tmp.value}")
     private int tmpValue;
 
+    private final ServiceBClientIntf serviceBClient;
+
+    public ServiceAController(ServiceBClientIntf serviceBClient) {
+        this.serviceBClient = serviceBClient;
+    }
+
     @GetMapping("/serviceA")
     public String serviceA() {
         return "Service A. ID: " + instanceId + "; tmpValue: " + tmpValue;
+    }
+
+    @GetMapping("/chain")
+    public String requestToServiceB() {
+        return "Service A. Chain service B: " + this.serviceBClient.serviceB();
     }
 
 }
